@@ -17,6 +17,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1640735950544047');
 fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+  content_name: 'Funnel Inmobiliario',
+  content_category: 'Agentes Inmobiliarios'
+});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
@@ -176,34 +180,6 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
     letter-spacing: -0.01em;
   }
   .divider-text .green { color: var(--green); }
-
-  /* ─── PAIN SECTION ─── */
-  .pain-section {
-    max-width: 900px;
-    margin: 40px auto 70px;
-    padding: 0 24px;
-    text-align: center;
-  }
-  .pain-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2px;
-    margin-top: 32px;
-  }
-  .pain-item {
-    background: var(--bg2);
-    padding: 20px 16px;
-    border: 1px solid var(--gray-dim);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray);
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .pain-item:hover { color: var(--white); border-color: var(--green); }
-  .pain-item .num { color: var(--green); display: block; font-size: 1.1rem; margin-bottom: 6px; }
 
   /* ─── PACKAGES SECTION ─── */
   .packages-section {
@@ -623,31 +599,7 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- GANCHO / DOLOR -->
-<div class="gancho">
-  <blockquote>
-    "Meses haciendo guardias y hablando<br>con gente que <span class="green">no compra.</span><br>
-    El problema no eres tú —<br>no tienes un <span class="green">sistema."</span>
-  </blockquote>
-  <p class="sub">Dolores reales de agentes en Guadalajara, Monterrey y CDMX.</p>
-</div>
 
-<!-- PAIN POINTS -->
-<section class="pain-section">
-  <span class="hero-label">Los 10 dolores que frenan tu carrera</span>
-  <div class="pain-grid">
-    <div class="pain-item"><span class="num">01</span>Ingresos impredecibles</div>
-    <div class="pain-item"><span class="num">02</span>Leads no calificados</div>
-    <div class="pain-item"><span class="num">03</span>Mercado saturado</div>
-    <div class="pain-item"><span class="num">04</span>No saber vender en digital</div>
-    <div class="pain-item"><span class="num">05</span>Tiempo perdido en guardias</div>
-    <div class="pain-item"><span class="num">06</span>Sin marca personal</div>
-    <div class="pain-item"><span class="num">07</span>Jóvenes con redes te ganan</div>
-    <div class="pain-item"><span class="num">08</span>Portales caros, leads basura</div>
-    <div class="pain-item"><span class="num">09</span>Burocracia frena cierres</div>
-    <div class="pain-item"><span class="num">10</span>Cero sistema, todo reacción</div>
-  </div>
-</section>
 
 <!-- DIVIDER -->
 <div class="divider">
@@ -906,33 +858,13 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
 <!-- FOOTER CTA -->
 
 <!-- ─── URGENCIA / SCARCITY ─── -->
-<div style="background:#0a0f0a; border-top:1px solid rgba(239,68,68,0.25); border-bottom:1px solid rgba(239,68,68,0.25); padding:48px 24px; text-align:center; margin-bottom:0;">
+<div style="background:#0a0f0a; border-top:2px solid rgba(239,68,68,0.5); border-bottom:2px solid rgba(239,68,68,0.5); padding:40px 24px; text-align:center; margin-bottom:0;">
   <div style="max-width:700px; margin:0 auto;">
 
-    <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); padding:6px 16px; margin-bottom:20px;">
-      <span style="width:8px; height:8px; border-radius:50%; background:#ef4444; display:inline-block; animation:pulse 1.5s infinite;"></span>
-      <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:#ef4444;">OFERTA DE LANZAMIENTO · CUPOS LIMITADOS</span>
+    <div style="display:inline-flex; align-items:center; gap:12px; background:rgba(239,68,68,0.15); border:2px solid rgba(239,68,68,0.6); padding:14px 32px;">
+      <span style="width:12px; height:12px; border-radius:50%; background:#ef4444; display:inline-block; animation:pulse 1.5s infinite; flex-shrink:0;"></span>
+      <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:#ef4444;">OFERTA DE LANZAMIENTO · CUPOS LIMITADOS</span>
     </div>
-
-    <h2 style="font-family:'Anton','Barlow Condensed',sans-serif; font-weight:400; font-size:clamp(1.8rem,4vw,3rem); text-transform:uppercase; line-height:1.05; letter-spacing:-0.01em; margin-bottom:16px;">
-      ESTOS PRECIOS <span style="color:#ef4444;">DESAPARECEN</span><br>
-      EN CUANTO SE LLENEN<br>
-      <span style="color:#22c55e;">LOS 26 LUGARES.</span>
-    </h2>
-
-    <p style="font-size:0.95rem; color:#9ca3af; line-height:1.6; max-width:520px; margin:0 auto 28px;">
-      Esta promoción es exclusiva para los primeros <strong style="color:#ffffff;">26 agentes</strong> que contraten cualquier paquete. Una vez que se agoten los cupos, los precios suben sin previo aviso. Sin excepciones.
-    </p>
-
-    <!-- Contador de lugares -->
-    <div style="display:flex; justify-content:center; align-items:center; gap:0; margin-bottom:28px;">
-      <div id="spots-taken" style="display:flex; gap:6px; flex-wrap:wrap; justify-content:center; max-width:400px;">
-      </div>
-    </div>
-
-    <p style="font-family:'Barlow Condensed',sans-serif; font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:#6b7280;">
-      ¿Eres de los 26? · El precio que ves hoy no estará mañana.
-    </p>
 
   </div>
 </div>
@@ -943,36 +875,6 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
     50% { opacity: 0.3; }
   }
 </style>
-
-<script>
-  // Genera 26 dots — algunos "tomados" para crear urgencia visual
-  const taken = 19; // Puedes ajustar este número
-  const total = 26;
-  const container = document.getElementById('spots-taken');
-  if (container) {
-    for (let i = 0; i < total; i++) {
-      const dot = document.createElement('div');
-      dot.style.width = '28px';
-      dot.style.height = '28px';
-      dot.style.borderRadius = '2px';
-      dot.style.background = i < taken ? '#ef4444' : 'rgba(34,197,94,0.15)';
-      dot.style.border = '1px solid ' + (i < taken ? '#ef4444' : 'rgba(34,197,94,0.3)');
-      dot.style.transition = 'background 0.3s';
-      dot.style.display = 'inline-block';
-      dot.style.margin = '2px';
-      if (i === taken) {
-        dot.style.border = '1px solid #22c55e';
-        dot.style.background = 'rgba(34,197,94,0.3)';
-        dot.style.boxShadow = '0 0 8px rgba(34,197,94,0.5)';
-      }
-      container.appendChild(dot);
-    }
-    const legend = document.createElement('div');
-    legend.style.cssText = 'width:100%; text-align:center; margin-top:12px; font-family:Barlow Condensed,sans-serif; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:#9ca3af;';
-    legend.innerHTML = '<span style="color:#ef4444">■</span> ' + taken + ' lugares tomados &nbsp;·&nbsp; <span style="color:#22c55e">■</span> ' + (total - taken) + ' disponibles';
-    container.appendChild(legend);
-  }
-</script>
 
 <div id="contacto" style="background:#0d150e; border-top:1px solid rgba(34,197,94,0.15); padding:60px 24px; text-align:center;">
   <span class="hero-label">¿Listo para tener un sistema?</span>
@@ -1042,6 +944,12 @@ function descargarGuia() {
     document.getElementById('pdf-download-btn').click();
   }, 500);
 
+  // ANTES del emailjs.send(...)
+  fbq('track', 'Lead', {
+    content_name: 'Formulario Lead Magnet',
+    content_category: 'Agentes Inmobiliarios'
+  });
+
   // Enviar a EmailJS con variables correctas del template
   emailjs.send('service_2ngtdfa', 'template_73hfarj', {
     nombre: nombre,
@@ -1108,6 +1016,18 @@ function descargarGuia() {
   (function(){
     emailjs.init('Bd-5Ytsn-299nqtSl');
   })();
+</script>
+<script>
+  document.querySelectorAll('a.cta-btn[href*="mpago.la"]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      fbq('track', 'InitiateCheckout', {
+        content_name: this.closest('.card') && this.closest('.card').querySelector('.card-title')
+          ? this.closest('.card').querySelector('.card-title').innerText
+          : 'Producto',
+        currency: 'MXN'
+      });
+    });
+  });
 </script>
 </body>
 </html>
