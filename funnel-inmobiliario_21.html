@@ -530,6 +530,21 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
     .hero h1 { font-size: 2.4rem; }
     .pain-grid { grid-template-columns: 1fr; }
   }
+  /* ─── HERO VIDEO MOBILE ─── */
+  @media (max-width: 640px) {
+    .hero-video-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 16px !important;
+    }
+    .hero-video-grid > div:first-child,
+    .hero-video-grid > div:last-child {
+      display: none !important;
+    }
+    .hero-video-grid > div:nth-child(2) {
+      width: 100% !important;
+    }
+  }
 
   /* ─── ANIMATIONS ─── */
   @keyframes fadeUp {
@@ -555,7 +570,7 @@ src="https://www.facebook.com/tr?id=1640735950544047&ev=PageView&noscript=1"
   <p class="hero-sub">¿Quieres más información? Ve el siguiente video y descubre cómo los mejores agentes en México están cerrando más propiedades sin gastar horas en guardias.</p>
 
   <!-- VIDEO HERO CON ANOTACIONES MANUSCRITAS -->
-  <div style="max-width:860px; margin:0 auto 24px; display:grid; grid-template-columns:130px 1fr 130px; align-items:center; gap:12px;">
+  <div style="max-width:860px; margin:0 auto 24px; display:grid; grid-template-columns:130px 1fr 130px; align-items:center; gap:12px;" class="hero-video-grid">
 
     <!-- IZQUIERDA -->
     <div style="display:flex; align-items:center; justify-content:center; height:100%;">
