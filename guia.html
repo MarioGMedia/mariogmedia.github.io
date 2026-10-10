@@ -183,7 +183,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       <a class="btn" id="downloadBtn" href="Manual_del_Gancho_MarioG_Media.pdf">Descargar el manual →</a>
       <div class="sep" style="height:1px; background:var(--glass-border); margin:26px 0 20px;"></div>
       <p style="color:var(--gray); font-size:0.95rem; margin:0;">¿Y el resto del video? Te digo qué armaría para tus propiedades.</p>
-      <a class="btn ghost js-dm" href="https://ig.me/m/mariog_media" target="_blank" rel="noopener">Escríbeme por DM</a>
+      <a class="btn ghost js-wa" href="https://wa.me/523312523691?text=Hola%20Mario%2C%20baj%C3%A9%20el%20Manual%20del%20Gancho%20y%20quiero%20saber%20qu%C3%A9%20armar%C3%ADas%20para%20mis%20propiedades." target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
     </div>
   </div>
 
@@ -202,7 +202,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       <span class="eyebrow">Siguiente paso</span>
       <h3 style="margin-top:10px;">¿Y si el video lo graba tu clon?</h3>
       <p>Hacemos tours y videos de propiedades con IA, con tu cara y tu voz. Escríbeme y te digo qué armaría para tu inventario.</p>
-      <a class="btn js-dm" href="https://ig.me/m/mariog_media" target="_blank" rel="noopener" style="margin-top:24px;">Mandarme un DM →</a>
+      <a class="btn js-wa" href="https://wa.me/523312523691?text=Hola%20Mario%2C%20baj%C3%A9%20el%20Manual%20del%20Gancho%20y%20quiero%20saber%20qu%C3%A9%20armar%C3%ADas%20para%20mis%20propiedades." target="_blank" rel="noopener" style="margin-top:24px;">Escribirme por WhatsApp →</a>
     </div>
   </section>
 
@@ -228,10 +228,10 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   if (utm.utm_content) clarity('set', 'reel', utm.utm_content);
   if (utm.utm_campaign) clarity('set', 'campana', utm.utm_campaign);
 
-  document.querySelectorAll('.js-dm').forEach(function (a) {
+  document.querySelectorAll('.js-wa').forEach(function (a) {
     a.addEventListener('click', function () {
-      fbq('track', 'Contact', { content_name: 'DM desde manual', reel: utm.utm_content });
-      clarity('event', 'clic_dm');
+      fbq('track', 'Contact', { content_name: 'WhatsApp desde manual', reel: utm.utm_content });
+      clarity('event', 'clic_whatsapp');
     });
   });
 
